@@ -1,7 +1,8 @@
 // pv 即页面访问量（page view）,记录用户对网站的访问
 /* 
   主要监听 history 和 hash
-  1. history无法通过popstate监听页面的前进后退（pushstate,replacestate）,需要重写函数
+  1. history无法只通过popstate监听页面
+    因为（pushstate,replacestate）进行页面跳转不会触发popstate,需要重写函数
   2. hash使用hashchange监听
 */
 
